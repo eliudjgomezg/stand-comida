@@ -1,5 +1,9 @@
-import Home from 'components/Home'
+import { NextPage } from 'next'
 
-export default function HomePage() {
-  return <Home />
+import Restaurant from 'components/Restaurant'
+
+const HomePage: NextPage = () => {
+  return <Restaurant />
 }
+
+export default HomePage

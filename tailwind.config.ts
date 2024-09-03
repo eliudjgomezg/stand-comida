@@ -6,9 +6,6 @@ const config = {
         transparent: 'var(--transparent)',
         white: 'var(--white)',
         black: 'var(--black)',
-
-        'primary-color': 'var(--magenta)',
-        'secondary-color': 'var(--orange-500)',
       },
       fontFamily: {
         monserrat: ['var(--font-monserrat)'],
@@ -36,7 +33,7 @@ const config = {
       '4xl': '1920px'
     }
   },
-  darkMode: 'dark',
+  darkMode: 'light',
   plugins: [require('@tailwindcss/forms')],
   important: true
 }
