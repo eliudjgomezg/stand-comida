@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 
 import 'assets/styles/colors.css'
 import 'assets/styles/html-core.css'
+import { Analytics } from '@vercel/analytics/react'
+
 import { montserrat } from 'assets/styles/fonts'
 import { LoaderContextProvider } from 'context/LoaderContext'
 import AuthSessionProvider from 'providers/SessionProvider'
@@ -21,7 +23,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <AuthSessionProvider>
           <TanstackProvider>
             <LoaderContextProvider>
-              <SnackBarProvider>{children}</SnackBarProvider>
+              <SnackBarProvider>
+                {children}
+                <Analytics />
+              </SnackBarProvider>
             </LoaderContextProvider>
           </TanstackProvider>
         </AuthSessionProvider>
