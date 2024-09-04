@@ -48,6 +48,17 @@ a {
   text-decoration: none;
 }
 
+.bg-menu {
+  background-image: url('../images/bandera-chile.webp');
+  background-size: 150px 150px;
+}
+.bg-white-transparent {
+  background-color: rgb(255, 255, 255, 0.80)
+}
+.bg-blue-transparent {
+  background-color: rgb(0, 55, 161, 0.90)
+}
+
 code {
   font-family: monospace;
   font-size: inherit !important;
