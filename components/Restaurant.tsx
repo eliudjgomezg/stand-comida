@@ -57,7 +57,7 @@ const Restaurant = () => {
           </div>
         </main>
 
-        <footer className="mt-8">
+        <footer className="mt-8 rounded-t-3xl overflow-hidden">
           <a className="block" href="https://devix-academy-front.vercel.app" target="_blank">
             <Image className="md:hidden block w-full" src={bannerMobile} alt="banner" />
             <Image className="md:block hidden w-full" src={bannerDesktop} alt="banner" />
